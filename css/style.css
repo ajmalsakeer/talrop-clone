@@ -1,0 +1,2282 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1325px;
+}
+
+@font-face {
+    font-family: 'Gordita Bold';
+    src: url('../fonts/Gordita-Bold.woff2') format('woff2'),
+        url('../fonts/Gordita-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita Regular';
+    src: url('../fonts/Gordita-Regular.woff2') format('woff2'),
+        url('../fonts/Gordita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gordita Medium';
+    src: url('../fonts/Gordita-Medium.woff2') format('woff2'),
+        url('../fonts/Gordita-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+#home { 
+    background: url('../Images/spotlight.png') no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+#home section.background { 
+    padding: 50px 0;
+    background: url('../Images/spotlight-bg.png') no-repeat;
+    background-position: right top;
+    background-size: 655px;
+}
+#home section.background section.wrapper { 
+
+}
+#home section.background header { 
+
+}
+#home section.background header h1 { 
+    width: 80px;
+}
+#home section.background header h1 img { 
+    width: 100%;
+    display: block;
+}
+#home section.background section.spotlight { 
+    padding: 150px 0 150px;
+}
+#home section.background section.spotlight div.left { 
+    width: 47%;
+}
+#home section.background section.spotlight div.left h2 { 
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Gordita Medium';
+    color: #000;
+}
+#home section.background section.spotlight div.left h2 b { 
+    color: #0bbe61;
+    font-family: 'Gordita Bold';
+    display: block;
+}
+#home section.background section.spotlight div.left p { 
+    font-family: 'Gordita Regular';
+    font-size: 18px;
+    color: #757474;
+}
+#startup { 
+    padding: 20px 0;
+}
+#startup section.wrapper { 
+
+}
+#startup div.top { 
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+#startup div.top h3 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 15px;
+    position: relative;
+}
+#startup div.top h3::before {
+    position: absolute;
+    content: "";
+    width: 225px;
+    height: 15px;
+    background: url(../Images/line.svg) no-repeat;
+    background-size: contain;
+    top: 41px;
+}
+#startup div.top h3 b { 
+    color: #0bbe61;
+}
+#startup div.top p { 
+    font-size: 16px;
+    font-family: 'Gordita Regular';
+    width: 76%;
+    margin: 20px auto 0;
+    color: #757474;
+}
+#startup div.bottom { 
+    width: 60%;
+    margin: 0 auto;
+}
+#startup div.bottom ul { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+#startup div.bottom ul li { 
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+#startup div.bottom ul li img { 
+    display: block;
+    height: 40px;
+}
+#needs { 
+padding-top: 100px;
+}
+#needs section.wrapper { 
+
+}
+#needs div.items { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#needs div.items div.left { 
+    width: 30%;
+}
+#needs div.items div.left div.img-container { 
+    width: 80%;
+}
+#needs div.items div.left div.img-container img { 
+    display: block;
+    width: 100%;
+}
+#needs div.items div.right { 
+    width: 50%;
+}
+#needs div.items div.right h2 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 20px;
+    position: relative;
+}
+#needs div.items div.right h2::after {
+    content: "";
+    width: 230px;
+    height: 180px;
+    position: absolute;
+    z-index: -1;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    left: 10px;
+    top: -30px;
+    filter: blur(8px);
+}
+#needs div.items div.right p { 
+    font-family: 'Gordita Regular';
+    color: #757474;
+}
+#projects { 
+    padding: 100px 0 200px;
+}
+#projects section.wrapper { 
+
+}
+#projects div.items { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#projects div.items div.left { 
+    width: 40%;
+    margin: 0 auto;
+}
+#projects div.items div.left h3 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 25px;
+    color: #000;
+    position: relative;
+}
+#projects div.items div.left h3::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    filter: blur(10px);
+}
+#projects div.items div.left p {
+    font-family: 'Gordita Regular';
+    color: #757474;
+    width: 98%;
+}
+#projects div.items div.right {
+    width: 50%;
+    margin: 0 auto;
+}
+#projects div.items div.right ul {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+#projects div.items div.right ul li {
+    width: 47%;
+    border: 1px solid #96ca4c5a;
+    border-radius: 15px;
+    padding: 16px;
+    margin-bottom: 35px;
+}
+#projects div.items div.right ul li:first-child{
+    transform: translateY(50px);
+}
+#projects div.items div.right ul li:nth-child(3){
+    transform: translateY(50px);
+}
+#projects div.items div.right ul li:hover {
+    border: 1px solid #0bbe61;
+    box-shadow: 0 0 25px #ccc;
+    transition: all 0.3s ease-in-out 0s;
+}
+#projects div.items div.right ul li div.img-container { 
+    margin-bottom: 20px;
+}
+#projects div.items div.right ul li div.img-container img { 
+    display: block;
+    width: 100%;
+}
+#projects div.items div.right ul li h4 { 
+    font-size: 20px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 10px;
+    color: #545454;
+}
+#projects div.items div.right ul li p { 
+    font-family: 'Gordita Regular';
+    font-size: 14px;
+    color: #757474;
+}
+#startups { 
+    background: #f9f9f9;
+}
+#startups section.wrapper { 
+
+}
+#startups div.top { 
+    padding-top: 100px;
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+}
+#startups div.top h2 { 
+    font-size: 32px;
+    font-family: 'Gordita Medium';
+    color: #000;
+    margin-bottom: 20px;
+    
+}
+#startups div.top h2::before {
+    content: "";
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+    left: 80px;
+    top: 60px;
+    opacity: 0.7;
+    filter: blur(10px);
+}
+#startups div.top p { 
+    font-family: 'Gordita Regular';
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+#startups div.bottom { 
+    padding-top: 100px;
+}
+#startups div.bottom ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#startups div.bottom ul li {
+    width: 23%;
+    border: 1px solid #d6ecd4;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    position: relative;
+    padding: 35px 15px;
+    min-height: 360px;
+    margin-right: 20px;
+    background: #fff;
+}
+#startups div.bottom ul li:nth-child(4) {
+    margin-right: 0;
+}
+#startups div.bottom ul li:nth-child(8) {
+    margin-right: 0;
+}
+#startups div.bottom ul li:last-child {
+    margin-right: 0;
+}  
+#startups div.bottom ul li div.border { 
+    width: 110px;
+    height: 110px;
+    border: 2px solid rgb(11, 190, 97);
+    border-radius: 50%;
+    padding: 7px;
+    overflow: hidden;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+#startups div.bottom ul li div.border span.white { 
+    display: flex;
+    width: 92px;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid #fff;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 0 25px #ccc;
+}
+#startups div.bottom ul li div.border span.white img { 
+    width: 70%;
+    display: block;
+    overflow: hidden;
+}
+#startups div.bottom ul li h3 { 
+    font-size: 18px;
+    font-family: 'Gordita Medium';
+    color: #545454;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+#startups div.bottom ul li p { 
+    color: #7e7e7e;
+    font-family: 'Gordita Regular';
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#startups div.bottom ul li a.button {
+    background: #d5f0e6;
+    color: #5aa870;
+    font-size: 14px;
+    font-family: 'Gordita Medium';
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+}
+#startups div.bottom ul li:hover {
+    box-shadow: rgb(17 12 46 / 15%) 0px 48px 100px 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+#team { 
+    padding: 115px 0px;
+}
+#team section.wrapper { 
+
+}
+#team div.top { 
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+#team div.top h3 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 60px;
+    color: #000;
+    position: relative;
+}
+#team div.top h3::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    left: 90px;
+    top: -50px;
+}
+#team div.bottom { 
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+#team div.bottom ul { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#team div.bottom ul li { 
+    width: 26%;
+    margin-right: 20px;
+}
+#team div.bottom ul li div.border { 
+    border: 1px solid rgb(217, 240, 232);
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+#team div.bottom ul li div.border img { 
+    display: block;
+    width: 100%;
+}
+#team div.bottom ul li h5 { 
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+}
+#team div.bottom ul li small { 
+    display: block;
+    color: #747474;
+    margin-bottom: 15px;
+}
+#team div.bottom ul li a.button {
+    background: #2b7ebc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto 25px;
+    cursor: pointer;
+}
+#team div.bottom ul li a.button span.img {
+    display: inline-block;margin-right: 10px;
+}
+#team div.bottom ul li a.button span.img img {
+    width: 15px;
+}
+#team div.bottom ul li a.button span.label {
+    color: #fff;
+    font-family: 'Gordita Medium';
+    font-size: 12px;
+}
+#ambassador { 
+    padding-bottom: 120px;
+}
+#ambassador section.wrapper { 
+
+}
+#ambassador div.img {
+    width: 71%;
+    margin: 0 auto;
+    display: none;
+}
+#ambassador div.img img {
+    display: block;
+    width: 100%;
+}
+#ambassador div.img-container { 
+    width: 71%;
+    margin: 0 auto;
+}
+#ambassador div.img-container img { 
+    display: block;
+    width: 100%;
+}
+#interest { 
+    padding: 130px 0px;
+    background: #f9f9f9;
+}
+#interest section.wrapper { 
+
+}
+#interest div.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#interest div.items div.left { 
+    width: 29%;
+    margin: 0 auto;
+}
+#interest div.items div.left h3 { 
+    font-size: 32px;
+    font-family: 'Gordita Medium';
+    color: #000;
+}
+#interest div.items div.right { 
+    width: 64%;
+    margin: 0 auto;
+}
+#interest div.items div.right ul { 
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+#interest div.items div.right ul li { 
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    margin-bottom: 30px;
+}
+#interest div.items div.right ul li span.img { 
+    width: 15%;
+    margin-right: 13px;
+    display: inline-block;
+}
+#interest div.items div.right ul li span.img img { 
+    display: block;
+    width: 100%;
+}
+#interest div.items div.right ul li div.content { 
+    width: 100%;
+}
+#interest div.items div.right ul li div.content h4 { 
+    font-size: 20px;
+    color: #545454;
+    font-family: 'Gordita Medium';
+    margin-bottom: 10px;
+}
+#interest div.items div.right ul li div.content p { 
+    font-size: 16px;
+    width: 100%;
+    color: #757474;
+    font-family: 'Gordita Regular';
+}
+#revolution { 
+    padding-top: 114px;
+}
+#revolution section.wrapper { 
+
+}
+#revolution h2 {
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 54px;
+    position: relative;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto 50px;
+    display: none;
+}
+#revolution h2::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    position: absolute;
+    left: -38px;
+    bottom: -35px;
+    filter: blur(15px);
+    z-index: -1;
+    display: none;
+}
+#revolution div.items { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+#revolution div.items div.left { 
+    width: 50%;
+}
+#revolution div.items div.left h2 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 54px;
+    position: relative;
+    display: block;
+    text-align: start;
+    margin: 0px 0px 50px;
+    width: 100%;
+}
+#revolution div.items div.left h2::before {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+    top: -90px;
+    left: -50px;
+    display: block;
+}
+#revolution div.items div.left h2 br { 
+
+}
+#revolution div.items div.left ul { 
+
+}
+#revolution div.items div.left ul li { 
+
+}
+#revolution div.items div.left ul li h3 { 
+    margin-bottom: 10px;
+    font-family: 'Gordita Medium';
+    font-size: 20px;
+}
+#revolution div.items div.left ul li p { 
+    font-size: 16px;
+    color: #757474;
+    font-family: 'Gordita Regular';
+    line-height: 1.8em;
+}
+#revolution div.items div.right { 
+    width: 40%;
+    border: 1px solid rgb(226, 226, 226);
+    padding: 35px;
+    border-radius: 15px;
+    height: 750px;
+    position: sticky;
+    top: 110px;
+}
+#revolution div.items div.right div.img-container {
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#revolution div.items div.right div.img-container img { 
+    display: block;
+    width: 100%;
+}
+#revolution div.items div.right h3 { 
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 20px;
+    color: #545454;
+    position: relative;
+    margin-left: 6px;
+}
+#revolution div.items div.right h3::before {
+    content: "";
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    background: rgb(27, 202, 27);
+    left: -6px;
+}
+#revolution div.items div.right p { 
+    font-family: 'Gordita Regular';
+    color: #757474;
+    font-size: 15px;
+    
+}
+#revolution div.items div.right p br { 
+
+}
+#programs { 
+    padding: 114px 0px 45px;
+    background: #f9f9f9;
+}
+#programs section.wrapper { 
+
+}
+#programs  div.top { 
+
+}
+#programs  div.top h3 { 
+    font-size: 34px;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Gordita Medium';
+}
+#programs  div.bottom { 
+
+}
+#programs  div.bottom ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#programs  div.bottom ul li { 
+    width: 31%;
+    border-radius: 20px;
+    border: 1px solid rgb(214, 236, 212);
+    background: #fff;
+    padding: 82px 29px 30px;
+    position: relative;
+    margin-bottom: 90px;
+    height: 360px;
+    margin-right: 26px;
+}
+#programs  div.bottom ul li:hover {
+    box-shadow: rgb(0 0 0 / 9%) 20px 23px 25px;
+    transition: all 0.3s ease-in-out 0s;
+}
+#programs  div.bottom ul li h1 { 
+    width: 80px;
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    box-shadow: rgb(0 0 0 / 10%) 8px 14px 16px;
+    background-color: rgb(219, 239, 255);
+    border-radius: 50%;
+}
+#programs  div.bottom ul li h1 img { 
+    width: 100%;
+    display: block;
+}
+#programs  div.bottom ul li h3 { 
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Gordita Medium';
+}
+#programs  div.bottom ul li p { 
+    color: #8e8c8c;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Gordita Regular';
+}
+#programs  div.bottom ul li div.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    width: 84%;
+}
+#programs  div.bottom ul li div.items div.social { 
+
+}
+#programs  div.bottom ul li div.items div.social h3 { 
+    color: #0fa76f;
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+}
+#programs  div.bottom ul li div.items div.icon { 
+    
+}
+#programs  div.bottom ul li div.items div.icon a {
+    display: inline-block;
+    width: 45px;
+    margin-right: 5px;
+}
+#programs  div.bottom ul li div.items div.icon a:last-child {
+    margin-right: 0;
+}
+#programs  div.bottom ul li div.items div.icon a img { 
+    width: 100%;
+    display: block;
+}
+#parks { 
+    padding: 120px 0px;
+}
+#parks section.wrapper { 
+
+}
+#parks div.top { 
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+#parks div.top h2 { 
+    font-size: 34px;
+    font-family: 'Gordita Medium';
+    color: #000;
+    position: relative;
+    width: 45%;
+    margin: 0 auto 10px;
+}
+#parks div.top h2::before {
+    position: absolute;
+    content: "";
+    width: 230px;
+    height: 200px;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+    top: -80px;
+    left: 82px;
+}
+#parks div.top p { 
+    color: #8e8c8c;
+    font-size: 16px;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 50px;
+    font-family: 'Gordita Regular';
+}
+#parks div.bottom { 
+
+}
+#parks div.bottom ul { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#parks div.bottom ul li { 
+    width: 33%;
+    margin: 0 auto;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#parks div.bottom ul li:hover {
+    background: rgb(249, 249, 249);
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out 0s;
+    transform: translateY(-10px);
+}
+#parks div.bottom ul li div.one {
+
+}
+#parks div.bottom ul li div.one div.img-container { 
+
+}
+#parks div.bottom ul li div.one div.img-container img { 
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+#parks div.bottom ul li div.one h3 { 
+    font-family: 'Gordita Medium';
+    margin-top: 18px;
+    font-size: 16px;
+    color: #545454;
+}
+#parks div.bottom ul li div.direction { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+    width: 100%;
+}
+#parks div.bottom ul li div.direction a.button { 
+    cursor: pointer;
+    width: 50%;
+    padding: 7px 14px;
+    background: #e5f5ef;
+    color: #0fa76f;
+    border: 1px solid rgb(26, 218, 147);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    margin-bottom: 40px;
+    font-family: 'Gordita Regular';
+}
+#parks div.bottom ul li div.direction a.button span.image { 
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px;
+}
+#parks div.bottom ul li div.direction a.button span.image img { 
+    display: block;
+    width: 100%;
+}
+#parks div.bottom ul li div.direction a.button span.label { 
+
+}
+#village { 
+   
+}
+#village section.wrapper { 
+
+}
+#village div.items { 
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 97px 55px 90px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+#village div.items div.left { 
+    width: 38%;
+}
+#village div.items div.left h2 { 
+    font-size: 32px;
+    font-family: 'Gordita Medium';
+    color: #212121;
+    margin: 0px auto 54px;
+    letter-spacing: 0.41px;
+    position: relative;
+}
+#village div.items div.left h2::before {
+    position: absolute;
+    content: "";
+    background: url(../Images/line.svg) no-repeat;
+    left: 12px;
+    width: 304px;
+    height: 11px;
+    bottom: -5px;
+    background-size: 210px;
+}
+#village div.items div.left h2 br { 
+
+}
+#village div.items div.left ul { 
+  
+}
+#village div.items div.left ul li { 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#village div.items div.left ul li div.img-container { 
+    width: 30px;
+    margin-right: 30px;
+}
+#village div.items div.left ul li div.img-container img { 
+    display: block;
+    width: 100%;
+}
+#village div.items div.left ul li p { 
+    color: #7e7e7e;
+    line-height: 1.8;
+    font-size: 14px;
+    width: 90%;
+    font-family: 'Gordita Regular';
+}
+#village div.items div.right { 
+    width: 56%;
+    position: relative;
+}
+#village div.items div.right div.img-conatiner { 
+    
+}
+#village div.items div.right div.img-conatiner img { 
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+#village div.items div.right a.button { 
+    display: block;
+    position: absolute;
+    width: 82px;
+    top: 157px;
+    left: 255px;
+}
+#village div.items div.right a.button img { 
+    display: block;
+    width: 100%;
+}
+#school { 
+    padding: 48px 0px 45px;
+}
+#school section.wrapper { 
+
+}
+#school div.top { 
+    position: relative;
+}
+#school div.top h2 { 
+    font-size: 32px;
+    font-family: 'Gordita Medium';
+    color: #212121;
+    margin: 0px auto 27px;
+    letter-spacing: 0.41px;
+    text-align: center;
+    position: relative;
+    width: 42%;
+}
+#school div.top h2::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url(../Images/backgrounds-color.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+    top: -30px;
+    right: 50px;
+}
+#school div.top h2 br { 
+
+}
+#school div.top div.img-container { 
+    position: absolute;
+    width: 13%;
+    right: 345px;
+    top: 88px;
+}
+#school div.top div.img-container img {
+    width: 100%;
+    display: block;
+}
+#school div.top p {
+    color: #8e8c8c;
+    font-size: 16px;
+    width: 55%;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-family: 'Gordita Regular';
+}
+#school div.bottom { 
+    padding: 54px 0px 0px;
+}
+#school div.bottom ul { 
+    display: flex;
+    justify-content: space-between;
+}
+#school div.bottom ul li { 
+    width: 31%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border: 1px solid rgb(214, 236, 212);
+    border-radius: 14px;
+}
+#school div.bottom ul li:hover {
+    box-shadow: rgb(0 0 0 / 9%) 20px 23px 46px;
+    transition: all 0.3s ease-in-out 0s;
+}
+#school div.bottom ul li div.img { 
+    width: 50%;
+    margin-right: 10px;
+}
+#school div.bottom ul li div.img img { 
+    width: 100%;
+    display: block;
+}
+#school div.bottom ul li div.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#school div.bottom ul li div.items div.content { 
+
+}
+#school div.bottom ul li div.items div.content h3 { 
+    font-family: 'Gordita Medium';
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#school div.bottom ul li div.items div.content h2 { 
+    color: rgb(15, 167, 111);
+    font-family: 'Gordita Medium';
+
+}
+#school div.bottom ul li div.items div.content p { 
+    font-size: 14px;
+    width: 100%;
+    font-family: 'Gordita Regular';
+    color: #8e8c8c;
+    margin-top: 10px;
+}
+#school div.bottom ul li div.items div.soc { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#school div.bottom ul li div.items div.soc h3 { 
+    color: #0fa76f;
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+}
+#school div.bottom ul li div.items div.soc div.ico { 
+
+}
+#school div.bottom ul li div.items div.soc div.ico a.button { 
+    display: inline-block;
+    width: 45px;
+}
+#school div.bottom ul li div.items div.soc div.ico a.button img { 
+    width: 100%;
+    display: block;
+}
+footer { 
+    background-color: rgb(30, 30, 30);
+    padding: 100px 0px 50px;
+}
+footer section.wrapper { 
+
+}
+footer div.items { 
+    display: flex;
+    justify-content: space-between;
+}
+footer div.items div.left { 
+    width: 28%;
+}
+footer div.items div.left div.img-container { 
+    width: 80px;
+}
+footer div.items div.left div.img-container img { 
+    width: 100%;
+    display: block;
+}
+footer div.items div.left p { 
+    font-size: 16px;
+    margin-top: 30px;
+    color: #aaaaaa;
+    line-height: 28px;
+    font-family: 'Gordita Regular';
+}
+footer div.items div.left p br { 
+
+}
+footer div.items div.right { 
+    width: 65%;
+}
+footer div.items div.right ul { 
+    display: flex;
+    justify-content: space-between;
+}
+footer div.items div.right ul li { 
+    font-family: 'Gordita Regular';
+    
+}
+footer div.items div.right ul li h5 { 
+    font-size: 16px;
+    font-family: 'Gordita Medium';
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+footer div.items div.right ul li a.button {
+    display: block; 
+    color: #aaaaaa;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+footer div.items div.right ul li div.img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div.items div.right ul li div.img a.button {
+    display: block;
+    height: 20px;
+}
+footer div.items div.right ul li div.img a.button img {
+    display: block;
+    height: 18px;
+    filter: grayscale(1);
+}
+footer div.items div.right ul li div.img a.button img:hover {
+    filter: grayscale(0);
+}
+footer div.bottom { 
+    widows: 80%;
+}
+footer div.bottom p { 
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Gordita Regular';
+    color: #aaaaaa;
+}
+
+@media all and (max-width:1280px) {
+    #home section.background {
+        background-size: 520px;
+    }
+    #home section.background section.spotlight div.left {
+        width: 55%;
+    }
+    #home section.background section.spotlight div.left h2 {
+        font-size: 48px;
+    }
+    #home section.background section.spotlight div.left {
+        width: 65%;
+    }
+    #needs div.items div.right {
+        width: 60%;
+    }
+    #needs div.items div.left {
+        width: 35%;
+    }
+    #projects div.items {
+        flex-wrap: wrap;
+    }
+    #projects div.items div.left {
+        width: 80%;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    #projects div.items div.left h3::before {
+        top: -80px;
+        right: 150px;
+    }
+    #needs {
+        padding: 100px 0px;
+    }
+    #projects div.items div.right {
+        width: 75%;
+    }
+    #startups div.top h2::before {
+        left: 20px;
+        top: 40px;
+    }
+    #startups div.top {
+        width: 66%;
+    }
+    #startups div.top p {
+        font-size: 16px;
+        color: #757474;
+    }
+    #startups div.bottom ul li {
+        width: 30%;
+    }
+    #startups div.bottom ul li:nth-child(4) {
+        margin-right: 20px;
+    }
+    #startups div.bottom ul li:nth-child(8) {
+        margin-right: 20px;
+    }
+    #team div.top h3::before {
+        left: 30px;
+    }
+    #team div.bottom ul li {
+        width: 29%;
+    }
+    #interest div.items div.left {
+        width: 50%;
+        text-align: center;
+    }
+    #interest div.items div.left h3 {
+        font-size: 34px;
+        margin-bottom: 70px;
+    }
+    #interest div.items div.right {
+        width: 100%;
+    }
+    #revolution div.items div.left h2 {
+        font-size: 28px;
+    }
+    #revolution div.items div.right {
+        width: 36%;
+    }
+
+    #revolution div.items div.right {
+    height: 890px;
+    }
+    #programs div.bottom ul li {
+        width: 46%;
+    }
+    #parks div.top h2 {
+        width: 55%;
+    }
+    #parks div.top {
+        width: 82%;
+    }
+    #parks div.top p {
+        width: 85%;
+    }
+    #parks div.bottom ul li div.direction a.button {
+        width: 56%;
+    }
+    #village div.items {
+        padding: 70px 40px 90px;
+    }
+    #village div.items div.left h2 {
+        font-size: 28px;
+    }
+    #village div.items div.left h2::before {
+        width: 192px;
+    }
+    #village div.items div.left {
+        width: 47%;
+    }
+    #village div.items div.right {
+        width: 48%;
+    }
+    #village div.items div.right a.button {
+        width: 70px;
+        top: 125px;
+        left: 205px;
+    }
+    #school div.top h2 {
+        width: 70%;
+        font-size: 30px;
+    }
+    #school div.top p {
+        font-size: 16px;
+        width: 70%;
+    }
+
+    #village div.items {
+        align-items: center;
+    }
+    #school div.top h2::before {
+        width: 250px;
+        top: -50px;
+        right: 110px;
+    }
+    #school div.top div.img-container {
+        position: absolute;
+        width: 14%;
+        right: 29%;
+        top: 49%;
+    }
+    #school div.bottom ul {
+        flex-wrap: wrap;
+    }
+    #school div.bottom ul li {
+        width: 46%;
+    }
+    #school div.bottom ul li div.img {
+        width: 30%;
+        margin-right: 25px;
+    }
+    #school div.bottom ul li {
+        margin: 0 auto 60px;
+    }
+    #school div.bottom ul li div.items div.content p {
+        margin: 25px 0px;
+    }
+    footer div.items {
+        flex-wrap: wrap;
+    }
+    footer div.items div.left {
+        width: 60%;
+        margin: 0 auto 50px;
+        text-align: center;
+    }
+    footer div.items div.left div.img-container {
+        width: 70px;
+        margin: 0 auto;
+    }
+    footer div.items div.left p br {
+        display: none;
+    }
+    footer div.items div.left p {
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    footer div.items div.right {
+        width: 90%;
+    }
+    footer div.items div.right ul li h5 {
+        font-size: 14px;
+    }
+    footer div.items div.right ul li a.button {
+        font-size: 13px;
+    }
+    footer div.bottom p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:1080px) {
+    #home section.background {
+        background-size: 470px;
+    }
+    #home section.background section.spotlight div.left {
+        width: 71%;
+    }
+    #home section.background section.spotlight {
+        padding: 150px 0 100px;
+    }
+    #startup div.top {
+        width: 100%;
+    }
+    #startup div.top p {
+        width: 84%;
+    }
+    #startup div.bottom {
+        width: 59%;
+        margin: 0 auto;
+    }
+    #startup div.bottom ul li img {
+        height: 36px;
+    }
+    #projects div.items div.left {
+        width: 85%;
+    }
+    #projects div.items div.right {
+        width: 84%;
+    }
+    #revolution div.items div.right {
+       position: unset;
+    }
+    #startups div.top {
+        width: 70%;
+    }
+    #startups div.top {
+        width: 70%;
+    }    
+    #startups div.bottom ul {
+        justify-content: center;
+    }
+    #startups div.bottom ul li {
+        width: 31%;
+        margin-right: 16px;
+    } 
+    #startups div.bottom ul li:nth-child(8) {
+        margin-right: 16px;
+    }
+    #startups div.bottom ul li:nth-child(4) {
+        margin-right: 16px;
+    }
+    #team div.top h3 {
+        font-size: 32px;
+    }
+    #team div.bottom ul li {
+        width: 30%;
+    }
+    #team div.bottom ul li a.button {
+        width: 73%;
+    }
+    #interest div.items div.right ul li span.img {
+        width: 15%;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    #revolution div.items div.right {
+        width: 40%;
+    }
+    #revolution div.items div.right {
+        min-height: 635px;
+    }
+    #revolution div.items div.left {
+        width: 48%;
+    }
+    #parks div.bottom ul li {
+        width: 32%;
+    }
+    #village div.items {
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 70px 40px 30px;
+    }
+    #village div.items div.right a.button {
+        width: 70px;
+        top: 34%;
+        left: 45%;
+    }
+    #school div.top h2 {
+        font-size: 28px;
+    }    
+    #school div.top div.img-container {
+        width: 15%;
+        right: 250px;
+        top: 75px;
+    } 
+    footer div.bottom p {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:980px) {
+    #home section.background {
+        background-size: 369px;
+    }
+    #home section.background section.spotlight {
+        padding: 150px 0px 70px;
+    }
+    #home section.background section.spotlight div.left h2 {
+        font-size: 48x;
+    }
+    #home section.background section.spotlight div.left p {
+        font-size: 16px;
+    }
+    #home section.background section.spotlight div.left {
+        width: 90%;
+    }
+    #startup div.top h3 {
+        font-size: 30px;
+    }
+    #startup div.top h3::before {
+        width: 200px;
+        top: 37px;
+    }
+    #startup div.top p {
+        width: 100%;
+    }
+
+    #needs div.items {
+        align-items: flex-start;
+    }
+    #needs div.items div.left div.img-container {
+        width: 85%;
+    }
+    #needs div.items div.left {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+    #needs div.items div.left div.img-container {
+        width: 80%;
+    }
+    #needs div.items div.right {
+        width: 70%;
+    }
+    #needs div.items div.right h2 {
+        font-size: 30px;
+        color: #000;
+        width: 85%;
+    }
+    #projects {
+        padding: 20px 0 200px;
+    }
+    #projects div.items div.left h3 {
+        font-size: 30px;
+    }
+    #projects div.items div.left {
+        width: 20%;
+    }
+    #projects div.items div.left {
+        width: 94%;
+    }
+    #projects div.items div.right {
+        width: 100%;
+    }
+    #projects {
+        padding: 20px 0 140px;
+    }
+    #startups div.top {
+        width: 90%;
+    }
+    #startups div.bottom ul li {
+        width: 47%;
+    }
+    #team div.top {
+        width: 42%;
+    }
+    #team div.bottom {
+        width: 100%;
+    }
+    #team div.bottom ul li a.button {
+        width: 76%;
+    }
+    #ambassador div.img-container {
+        width: 90%;
+    }
+    #revolution h2 {
+        width: 100%;
+    }
+    #revolution div.items div.right div.img-container {
+        width: 80px;
+    }
+    #revolution div.items {
+        margin-bottom: 50px;
+        flex-direction: column-reverse;
+    }
+    #revolution div.items div.right {
+        width: 100%;
+        height: unset;
+    }
+    #revolution div.items div.left {
+        width: 100%;
+        padding-top: 60px;
+    }
+    #programs {
+        padding: 100px 0px 45px;
+    }
+    #programs div.top h3 {
+        font-size: 32px;
+    }
+    #programs div.bottom ul li {
+        width: 46%;
+    }
+    #programs div.bottom ul li h1 {
+        width: 70px;
+    }
+    #parks div.top h2 {
+        width: 75%;
+        font-size: 31px;
+    }
+    #interest div.items div.left {
+        width: 60%;
+    }
+    #parks div.bottom ul li {
+        width: 50%;
+    }
+    #parks div.bottom ul li div.direction a.button {
+        width: 50%;
+    }
+    #parks {
+        padding: 120px 0px 50px;
+    }
+    #village div.items div.left h2 {
+        font-size: 27px;
+        text-align: center;
+    }
+    #village div.items div.left {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #village div.items div.right {
+        width: 100%;
+    }
+    #village div.items div.left h2::before {
+        left: 288px;
+        width: 191px;
+        background-size: contain;
+    }
+
+    #village div.items div.left ul li p {
+        width: 100%;
+    }
+    #village div.items {
+        padding: 70px 35px 30px;
+    }
+    #revolution div.items div.left h2 {
+        display: none;
+    }
+    #revolution h2 {
+        display: block;
+        font-size: 28px;
+    }
+    #revolution h2::before {
+        display: block;
+        left: 50px;
+    }
+    #village div.items div.right a.button {
+        width: 70px;
+        top: 45%;
+        left: 43%;
+    }
+    #school div.top div.img-container {
+        width: 18%;
+        right: 203px;
+    }
+    #school div.bottom ul li {
+        width: 100%;
+    }
+    #school div.bottom ul li div.img {
+        width: 10%;
+    }
+    #school div.bottom ul li div.items div.soc div.ico a.button {
+        margin-right: 8px;
+    }
+    #school div.bottom ul li div.items div.soc h3 {
+        font-size: 14px;
+    }
+    #school div.bottom ul li {
+        margin: 0 auto 40px;
+    }
+    footer {
+        padding: 80px 0px 40px;
+    }
+    footer div.items div.left {
+        width: 75%;
+    }
+}
+
+@media all and (max-width:768px) {
+    #home section.background {
+        background-size: 308px;
+    }
+    #home section.background section.spotlight {
+        padding: 100px 0px 70px;
+    }
+    #home section.background section.spotlight div.left h2 {
+        font-size: 44px;
+    }
+    #needs div.items {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #needs div.items div.left div.img-container {
+        width: 100%;
+    }
+    #needs div.items div.left {
+        width: 52%;
+    }
+    #needs div.items div.right {
+        width: 90%;
+    }
+    #startups div.top {
+        width: 100%;
+    }
+    #team div.bottom ul li h5 {
+        font-size: 14px;
+    }
+    #team div.bottom ul li {
+        width: 28%;
+    }
+    #team div.bottom ul li a.button span.img img {
+        width: 12px;
+    }
+    #team div.bottom ul li a.button {
+        width: 84%;
+    }
+    #team div.bottom ul li a.button span.label {
+        font-size: 10px;
+    }
+    #interest div.items div.left {
+        width: 100%;
+    }
+    #interest div.items div.right ul li {
+        width: 100%;
+    }
+    #interest div.items div.right ul li span.img {
+        width: 50px;
+    }
+    #interest {
+        padding: 100px 0px 70px;
+    }
+    #programs div.bottom ul li {
+        height: 320px;
+    }
+    #parks div.bottom ul li div.direction a.button span.label {
+        font-size: 15px;
+    }
+    #parks div.bottom ul li div.direction a.button {
+        width: 58%;
+    }
+    #village div.items div.left h2::before {
+        left: 34%;
+    }
+    #school div.top h2 {
+        width: 90%;
+    }
+    #school div.top div.img-container {
+        width: 22%;
+        right: 18%;
+    }
+    #school div.bottom ul li div.items div.soc h3 {
+        font-size: 12px;
+    }
+    footer div.items div.left {
+        width: 100%;
+    }
+    footer div.items div.right {
+        width: 98%;
+    }
+}
+
+@media all and (max-width:640px) {
+    #home section.background {
+        background-size: 230px;
+    }
+    #home section.background header h1 {
+        width: 70px;
+    }
+    #home section.background section.spotlight div.left h2 {
+        font-size: 36px;
+    }
+    #home section.background {
+        padding: 30px 0;
+    }
+    #home section.background section.spotlight {
+        padding: 130px 0px 40px;
+    }
+    #startup div.top p {
+        font-size: 15px;
+    }
+    #startup div.bottom {
+        width: 65%;
+    }
+    #needs {
+        padding: 0px 0px;
+    }
+    #needs div.items div.left {
+        width: 80%;
+    }
+    #needs div.items div.right h2 {
+        width: 100%;
+    }
+    #needs div.items div.right h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    #needs div.items div.right p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+    #projects div.items div.left h3::before {
+        top: -52px;
+        right: 70px;
+        width: 275px;
+    }
+    #projects div.items div.left p {
+        width: 100%;
+        font-size: 15px;
+    }
+    #projects div.items div.right ul li {
+        width: 90%;
+        margin: 0 auto 80px;
+    }
+    #projects div.items div.right ul li:first-child {
+        transform: none;
+    }
+    #projects {
+        padding: 0px;
+    }
+    #projects div.items div.right ul li {
+        margin: 0px 0 30px;
+    }
+    #startups div.bottom ul li {
+        width: 100%;
+    }
+    #startups div.bottom ul li div.border span.white {
+        width: 80px;
+        height: 78px;
+    }
+    #startups div.bottom ul li div.border {
+        width: 98px;
+        height: 97px;
+    }
+    #projects div.items div.right ul li:nth-child(3) {
+        transform: none;
+    }
+    #startups div.bottom ul li {
+        min-height: 312px;
+    }
+    #team div.top {
+        width: 60%;
+    }
+    #team div.top h3 {
+        font-size: 28px;
+    }
+    #team div.bottom ul li {
+        width: 42%;
+        margin: 0 auto;
+    }
+    #interest div.items div.left h3 {
+        font-size: 30px;
+    }
+    #interest div.items div.right ul li div.content h4 {
+        font-size: 16px;
+    }
+    #interest div.items div.right ul li div.content p {
+        font-size: 14px;
+    }
+    #programs div.bottom ul li {
+        width: 91%;
+        margin: 0 auto 80px;
+    }
+    #parks div.top h2 {
+        width: 100%;
+        font-size: 30px;
+        margin: 0 auto 20px;
+    }
+    #parks div.bottom ul li {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #village div.items div.left h2::before {
+        left: 31%;
+    }
+    #village div.items {
+        padding: 40px 28px 30px;
+    }
+    #village div.items div.right a.button {
+        width: 55px;
+        top: 42%;
+    }
+    #school div.top h2 {
+        width: 100%;
+    }
+    #school div.top h2 {
+        font-size: 24px;
+    }
+    #school div.top div.img-container {
+        width: 23%;
+        right: 16%;
+        top: 64px;
+    }
+    #school div.top p {
+        width: 100%;
+        margin: 0;
+    }
+    #school div.bottom {
+        padding: 30px 0px 0px;
+    }
+    #school div.bottom ul li div.img {
+        width: 30%;
+        margin-right: 12px;
+    }
+    footer div.items div.right ul {
+        flex-wrap: wrap;
+    }
+    footer div.items div.right ul li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+    footer div.items div.right ul li div.img a.button {
+        display: block;
+        margin-right: 12px;
+    }
+    footer div.items div.right ul li div.img a.button:last-child {
+        margin-right: 0px;
+    }
+    footer div.items div.right ul li div.img {
+         justify-content:start
+    }
+}
+
+@media all and (max-width:480px) {
+    #home section.background {
+        background-size: 227px;
+    }
+    #home section.background header h1 {
+        width: 60px;
+    }
+    #home section.background section.spotlight div.left h2 {
+        font-size: 28px;
+    }
+    #home section.background section.spotlight div.left {
+        width: 100%;
+        margin-right: 0;
+    }
+    #home section.background section.spotlight {
+        padding: 145px 0px 40px;
+    }
+    #home section.background section.spotlight div.left p {
+        font-size: 14px;
+    }
+    #startup div.top h3 {
+        font-size: 23px;
+    }
+    #projects div.items div.left h3::before {
+        right: 95px;
+        width: 160px;
+    }
+    #startup div.top h3::before {
+        width: 158px;
+        top: 28px;
+        left: 54px;
+    }
+    #startup div.top p {
+        font-size: 14px;
+    }
+    #startup div.bottom {
+        width: 80%;
+    }
+    #needs div.items div.left {
+        width: 100%;
+    }
+    #needs div.items div.right {
+        width: 100%;
+    }
+    #projects div.items div.left h3 {
+        font-size: 26px;
+    }
+    #projects div.items div.left p {
+        width: 100%;
+        font-size: 13px;
+    }
+    #projects div.items div.right ul li {
+        width: 100%;
+        margin: 0 auto 80px;
+    }
+    #startups div.top h2 {
+        font-size: 26px;
+    }
+    #startups div.top p {
+        font-size: 15px;
+        color: #757474;
+    }
+    #startups div.bottom ul li {
+        min-height: 340px;
+        margin-right: 0px;
+    }
+    #team div.top h3 {
+        font-size: 24px;
+    }
+    #team div.bottom ul li {
+        width: 46%;
+    }
+    #team div.bottom ul li a.button {
+        padding: 6px;
+    }
+    #ambassador div.img-container {
+        display: none;
+    }
+    #ambassador div.img {
+        display: block;
+    }
+    #team {
+        padding: 65px 0px;
+    }
+    #ambassador {
+        padding-bottom: 80px;
+    }
+    #interest div.items div.left h3 {
+        font-size: 24px;
+    }
+    #interest div.items div.left h3 {
+        margin-bottom: 50px;
+    }
+    #interest {
+        padding: 60px 0px 30px;
+    }
+    #revolution {
+        padding-top: 50px;
+    }
+    #revolution h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #revolution h2::before {
+        width: 100px;
+        height: 160px;
+        left: 15px;
+    }
+    #revolution div.items div.right p {
+        font-size: 14px;
+    }
+    #revolution div.items div.left ul li h3 {
+        font-size: 16px;
+    }
+    #revolution div.items div.left ul li p {
+        font-size: 14px;
+    }
+    #programs {
+        padding: 60px 0px 0px;
+    }
+    #programs div.top h3 {
+        font-size: 28px;
+    }
+    #programs div.bottom ul li h1 {
+        width: 60px;
+        top: -33px;
+        left: 26px;
+    }
+    #programs div.bottom ul li h3 {
+        font-size: 16px;
+    }
+    #programs div.bottom ul li p {
+        font-size: 14px;
+    }
+    #programs div.bottom ul li div.items div.social h3 {
+        font-size: 14px;
+    }
+    #programs div.bottom ul li {
+        height: 345px;
+    }
+    #parks {
+        padding: 60px 0px 50px;
+    }
+    #parks div.top h2 {
+        font-size: 22px;
+    }
+    #parks div.top h2::before {
+        width: 120px;
+        height: 200px;
+        top: -38px;
+        left: 36px;
+    }
+    #parks div.top p {
+        font-size: 14px;
+        margin: 0 auto 15px;
+        width: 100%;
+    }
+    #parks div.bottom ul li {
+         padding: 0px;
+    }
+    #village div.items div.left h2 {
+        font-size: 18px;
+        margin: 0px auto 25px;
+    }
+    #village div.items div.left h2::before {
+        left: 23%;
+    }
+    
+    #village div.items div.left h2::before {
+        left: 30%;
+        width: 140px;
+        bottom: -9px;
+    }
+    #village div.items div.left ul li {
+        flex-wrap: wrap;
+    }
+    #village div.items div.left ul li div.img-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #village div.items div.left ul li p {
+        font-size: 13px;
+    }
+    #school div.top h2 {
+        font-size: 18px;
+    }
+    #school div.top h2::before {
+        width: 135px;
+        top: -30px;
+        right: 118px;
+    }
+    #school div.top div.img-container {
+        width: 24%;
+        right: 16%;
+        top: 50px;
+    }
+    #school div.bottom ul li {
+        flex-wrap: wrap;
+    }
+    #school div.bottom ul li div.img {
+        width: 15%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    #school div.bottom ul li div.items div.content h3 {
+        font-size: 16px;
+    }
+    #school div.bottom ul li div.items div.content h2 {
+        font-size: 18px;
+    }
+    footer div.items div.right ul li h5 {
+        font-size: 13px;
+    }
+}
+
+@media all and (max-width:360px) {
+    #home section.background {
+        background-size: 200px;
+    }
+    #home section.background section.spotlight {
+        padding: 70px 0px 40px;
+    }
+    #startup div.top h3::before {
+        display: none;
+    }
+    #startup div.bottom {
+        width: 79%;
+    }   
+    #projects div.items div.right ul li {
+        margin: 0 auto 30px;
+    }
+    #startups div.top {
+        padding-top: 70px;
+    }
+    #startups div.top h2 {
+        font-size: 24px;
+    }
+    #startups div.top p {
+        font-size: 14px;
+    }
+    #team div.top h3 {
+        font-size: 22px;
+    }
+    #team div.bottom ul li {
+        width: 90%;
+    }
+    #ambassador div.img {
+        width: 80%;
+    }
+    #interest div.items div.right ul li {
+        flex-wrap: wrap;
+    }
+    #interest div.items div.right ul li span.img {
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    #revolution div.items div.right div.img-container {
+        width: 65px;
+    }
+    #revolution div.items div.right h3 {
+        font-size: 14px;
+    }
+    #programs div.top h3 {
+        font-size: 24px;
+    }
+    #programs div.bottom ul li {
+        height: 400px;
+    }
+    #parks div.top h2 {
+        font-size: 20px;
+    }
+    #parks div.top p {
+        font-size: 15px;
+    }
+    #village div.items div.left h2::before {
+        left: 23%;
+    }
+    #village div.items div.right a.button {
+        width: 45px;
+        top: 35%;
+    }
+    #parks div.top {
+        width: 100%;
+        margin: 0 auto 25px;
+    }
+    #school div.top div.img-container {
+        width: 34%;
+        right: 0%;
+    }
+    #school div.top h2 {
+        font-size: 20px;
+    }
+    footer div.bottom p {
+        margin-top: 25px;
+    }
+
+}
